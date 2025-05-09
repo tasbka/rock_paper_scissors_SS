@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Сделайте ваш выбор"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/playerChoiceImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/question"
+            android:layout_marginEnd="20dp"/>
+
+        <ImageView
+            android:id="@+id/computerChoiceImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/question"/>
+    </LinearLayout>
+
+    <!-- Первый ряд кнопок -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/rockButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Камень"
+            android:onClick="onChoiceSelected"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/scissorsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ножницы"
+            android:onClick="onChoiceSelected"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/paperButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Бумага"
+            android:onClick="onChoiceSelected"/>
+    </LinearLayout>
+
+    <!-- Второй ряд кнопок -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/lizardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ящерица"
+            android:onClick="onChoiceSelected"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/spockButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Спок"
+            android:onClick="onChoiceSelected"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onPlayButtonClick"
+        android:text="Играть" />
+
+</LinearLayout>
