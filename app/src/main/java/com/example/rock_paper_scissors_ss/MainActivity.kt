@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import kotlin.random.Random
 
+
 class MainActivity : AppCompatActivity() {
     // Объявление переменных для элементов интерфейса
     private lateinit var resultTextView: TextView      // Текстовое поле для отображения результата
