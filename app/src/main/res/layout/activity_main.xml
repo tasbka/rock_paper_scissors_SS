@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:text="Сделайте ваш выбор"
+        android:text="@string/default_choice_text"
         android:layout_marginBottom="20dp"/>
 
     <LinearLayout
@@ -49,7 +49,7 @@
             android:id="@+id/rockButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Камень"
+            android:text= "@string/rock_button"
             android:onClick="onChoiceSelected"
             android:layout_marginEnd="5dp"/>
 
@@ -57,7 +57,7 @@
             android:id="@+id/scissorsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ножницы"
+            android:text="@string/scissors_button"
             android:onClick="onChoiceSelected"
             android:layout_marginEnd="5dp"/>
 
@@ -65,7 +65,7 @@
             android:id="@+id/paperButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Бумага"
+            android:text="@string/paper_button"
             android:onClick="onChoiceSelected"/>
     </LinearLayout>
 
@@ -81,7 +81,7 @@
             android:id="@+id/lizardButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ящерица"
+            android:text="@string/lizard_button"
             android:onClick="onChoiceSelected"
             android:layout_marginEnd="5dp"/>
 
@@ -89,7 +89,7 @@
             android:id="@+id/spockButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Спок"
+            android:text="@string/spock_button"
             android:onClick="onChoiceSelected"/>
     </LinearLayout>
 
@@ -98,6 +98,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onPlayButtonClick"
-        android:text="Играть" />
+        android:text="@string/play_button" />
 
 </LinearLayout>

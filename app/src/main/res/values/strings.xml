@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">rock_paper_scissors_SS</string>
+
+    <string name="default_choice_text">Сделайте ваш выбор</string>
+
+    <!-- Названия кнопок -->
+    <string name="rock_button">Камень</string>
+    <string name="scissors_button">Ножницы</string>
+    <string name="paper_button">Бумага</string>
+    <string name="lizard_button">Ящерица</string>
+    <string name="spock_button">Спок</string>
+    <string name="play_button">Играть</string>
 </resources>
